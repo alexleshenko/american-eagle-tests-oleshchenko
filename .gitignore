@@ -1,0 +1,40 @@
+### Gradle ###
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+### VS Code ###
+.vscode/
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Logs / compiled ###
+*.log
+*.class
+*.tmp
+*.swp
+*~
+
+### JARs / WARs ###
+*.jar
+*.war
+*.ear
+
+### Optional (Eclipse / NetBeans — если не используешь, удали) ###
+.classpath
+.project
+.settings/
+nbproject/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
