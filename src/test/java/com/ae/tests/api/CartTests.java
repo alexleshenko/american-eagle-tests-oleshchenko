@@ -1,4 +1,4 @@
-package com.ae.tests;
+package com.ae.tests.api;
 
 import com.ae.api.AuthApi;
 import com.ae.api.BrowseApi;
@@ -15,7 +15,8 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 import java.util.Random;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CartTests {
 
