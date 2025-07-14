@@ -3,6 +3,7 @@ package com.ae.base;
 import io.qameta.allure.Allure;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.TestInfo;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -21,12 +22,18 @@ public abstract class BaseUiTest {
     @BeforeEach
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized");
+
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--window-size=1920,1080");
 
-        if (System.getProperty("headless", "false").equalsIgnoreCase("true")) {
+        boolean isHeadless = System.getProperty("headless", "false").equalsIgnoreCase("true")
+                || System.getenv("CI") != null;
+
+        if (isHeadless) {
             options.addArguments("--headless=new");
+        } else {
+            options.addArguments("--start-maximized");
         }
 
         driver = new ChromeDriver(options);
@@ -34,12 +41,9 @@ public abstract class BaseUiTest {
     }
 
     @AfterEach
-    public void tearDown(org.junit.jupiter.api.TestInfo testInfo) {
-        if (testInfo != null && testFailed(testInfo)) {
-            takeScreenshot(testInfo.getDisplayName());
-        }
-
+    public void tearDown(TestInfo testInfo) {
         if (driver != null) {
+            takeScreenshot(testInfo.getDisplayName());
             driver.quit();
         }
     }
@@ -52,9 +56,5 @@ public abstract class BaseUiTest {
         } catch (Exception e) {
             System.out.println("Failed to capture screenshot: " + e.getMessage());
         }
-    }
-
-    private boolean testFailed(org.junit.jupiter.api.TestInfo testInfo) {
-        return true;
     }
 }
