@@ -1,4 +1,4 @@
-package com.ae.tests;
+package com.ae.tests.api;
 
 import com.ae.api.AuthApi;
 import com.ae.api.BrowseApi;
