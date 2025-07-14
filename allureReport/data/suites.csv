@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Mon Jul 14 10:52:47 UTC 2025","Mon Jul 14 10:52:53 UTC 2025","5957","","com.ae.tests.api.CartTests","","com.ae.tests.api.CartTests","testAddRandomItemFromDressesCategory","testAddRandomItemFromDressesCategory()",""
+"passed","Mon Jul 14 10:52:39 UTC 2025","Mon Jul 14 10:52:42 UTC 2025","3188","","com.ae.tests.api.AuthTests","","com.ae.tests.api.AuthTests","getAccessTokenTest","Should fetch access token successfully",""
+"failed","Mon Jul 14 10:53:24 UTC 2025","Mon Jul 14 10:53:32 UTC 2025","8433","","com.ae.tests.ui.RegistrationTests","","com.ae.tests.ui.RegistrationTests","testSuccessfulRegistration","Successful user registration","Registers a new user via UI"
+"passed","Mon Jul 14 10:52:47 UTC 2025","Mon Jul 14 10:52:47 UTC 2025","477","","com.ae.tests.api.BrowseTests","","com.ae.tests.api.BrowseTests","getSkuIdsFromCategory","getSkuIdsFromCategory()",""
+"failed","Mon Jul 14 10:52:42 UTC 2025","Mon Jul 14 10:52:47 UTC 2025","4701","","com.ae.tests.api.BagTests","","com.ae.tests.api.BagTests","validateBagSummaryAfterAddToCart","validateBagSummaryAfterAddToCart()",""
+"broken","Mon Jul 14 10:52:53 UTC 2025","Mon Jul 14 10:53:24 UTC 2025","30594","","com.ae.tests.ui.LoginTests","","com.ae.tests.ui.LoginTests","loginWithValidCredentials","Login with valid credentials",""

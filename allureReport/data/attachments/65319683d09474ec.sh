@@ -1,0 +1,7 @@
+curl --location 'https://www.ae.com/ugp-api/bag/v1/items' \
+--header 'Content-Type: application/json' \
+--header 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ1MW01N0RmbXRjNXd5b1FHX1Y2bWdEaFdVWVVFcW40bUtCa29zWWxtR25NIn0.eyJleHAiOjE3NTI0OTIxNjcsImlhdCI6MTc1MjQ5MDM2NywianRpIjoiMmMzYjcxMWMtOTYzOC00Y2E4LTgyZDUtYzQ0MzI4OThmMjBmIiwiaXNzIjoiaHR0cHM6Ly9rZXNzZWwuaW50LXByLmFlLWdjcC5pby9yZWFsbXMvQUdXQSIsInN1YiI6IjU1NzZlMzdjLTZhN2YtNGM1Yy04ZDkyLTc5MDNhNWE5NzkzNyIsInR5cCI6IkJlYXJlciIsImF6cCI6IjIwZTQyNjkwLTg5M2EtNDgwMy04OWU3LTg5YmZiNGViZjJmZSIsInNjb3BlIjoiIiwib3JkZXJJZCI6WyIyOGI2ZjIxOC01NWI0LTRkN2EtOGFlMS02MDU3ZTUyZDA4MjQiXSwicHJvZmlsZUlkIjpbImQ0ZTdkOWUxLTNiYTktNDNhMC05ZDI0LTA1YjhmMDE4M2IwNiJdLCJzY29wZSI6Imd1ZXN0In0.gKA2ad0ZCjv2eTlFmCCw7GKxy8f9fJaHPxXmvy5Hwj9lEKi7DukX4gI9y5QRJkVQxIV5FlsvuOJMutX9tDgEkfa9PFFcTLKzlrCgkgcP5Kk6EDqK_DaRnjo_zLIQ1KaNGW--2wt34wRQOdISIpa35ZthGdYjCpdvtPP3Pu8eoaRQ1zCdbQSFHa4z5hc8Xo5ncdQyAIvPkkLweIH63BHDcbMXKjLhN_q9QmeA_du9TmpflZQYTmmhFMKU0H02YhcIIHovnLv1qZaYFmPjlNnnFI7_dRu6xojmKk-CJa4W2E8hH-j2d8si3pJmVw8hv1dPdErX_gs4vhfHdq1hPYXx-g' \
+--header 'aesite: AEO_US' \
+--header 'aelang: en_US' \
+--header 'origin: https://www.ae.com' \
+--data "{\"items\":[{\"skuId\":\"1399_8753_200\",\"quantity\":1}]}"
