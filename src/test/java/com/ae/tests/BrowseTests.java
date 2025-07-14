@@ -29,7 +29,7 @@ public class BrowseTests {
         assertNotNull(skuIds);
         assertFalse(skuIds.isEmpty());
 
-        System.out.println("Found skuIds:"); //!!!!!!!!!!!! это не ОНИ!!!!!!11
+        System.out.println("Found skuIds:");
         skuIds.forEach(System.out::println);
     }
 

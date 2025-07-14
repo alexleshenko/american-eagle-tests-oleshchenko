@@ -10,13 +10,21 @@ repositories {
     mavenCentral()
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
 dependencies {
-    // RestAssured
     // RestAssured
     implementation 'io.rest-assured:rest-assured:5.4.0'
     implementation 'io.rest-assured:json-path:5.4.0'
     implementation 'io.rest-assured:json-schema-validator:5.4.0'
 
+    // Selenium
+    implementation 'org.seleniumhq.selenium:selenium-java:4.21.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.7.0'
 
     // Jackson
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.0'
@@ -29,7 +37,6 @@ dependencies {
 
     // Lombok
     def lombokVersion = '1.18.30'
-
     compileOnly "org.projectlombok:lombok:$lombokVersion"
     annotationProcessor "org.projectlombok:lombok:$lombokVersion"
     testCompileOnly "org.projectlombok:lombok:$lombokVersion"
@@ -38,4 +45,17 @@ dependencies {
 
 test {
     useJUnitPlatform()
+
+    // Папка с Allure-результатами
+    systemProperty "allure.results.directory", "build/allure-results"
+
+    // Запуск с тегами через -Djunit.jupiter.tags.include=smoke
+    systemProperties System.getProperties()
+}
+
+allure {
+    version = '2.24.0'
+    useJUnit5 {
+        version = '2.24.0'
+    }
 }
