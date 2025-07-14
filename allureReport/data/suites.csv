@@ -1,7 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Jul 14 10:25:32 UTC 2025","Mon Jul 14 10:25:32 UTC 2025","250","","com.ae.tests.api.BrowseTests","","com.ae.tests.api.BrowseTests","getSkuIdsFromCategory","getSkuIdsFromCategory()",""
-"failed","Mon Jul 14 10:25:32 UTC 2025","Mon Jul 14 10:25:38 UTC 2025","5452","","com.ae.tests.api.CartTests","","com.ae.tests.api.CartTests","testAddRandomItemFromDressesCategory","testAddRandomItemFromDressesCategory()",""
-"failed","Mon Jul 14 10:25:27 UTC 2025","Mon Jul 14 10:25:32 UTC 2025","4996","","com.ae.tests.api.BagTests","","com.ae.tests.api.BagTests","validateBagSummaryAfterAddToCart","validateBagSummaryAfterAddToCart()",""
-"passed","Mon Jul 14 10:25:24 UTC 2025","Mon Jul 14 10:25:27 UTC 2025","3044","","com.ae.tests.api.AuthTests","","com.ae.tests.api.AuthTests","getAccessTokenTest","Should fetch access token successfully",""
-"broken","Mon Jul 14 10:25:38 UTC 2025","Mon Jul 14 10:26:06 UTC 2025","27762","","com.ae.tests.ui.LoginTests","","com.ae.tests.ui.LoginTests","loginWithValidCredentials","Login with valid credentials",""
-"failed","Mon Jul 14 10:26:06 UTC 2025","Mon Jul 14 10:26:14 UTC 2025","8341","","com.ae.tests.ui.RegistrationTests","","com.ae.tests.ui.RegistrationTests","testSuccessfulRegistration","Successful user registration","Registers a new user via UI"
